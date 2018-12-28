@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(24, 22, 22, 0.829);
+}
+
+#cake {
+  display: block;
+  position: relative;
+  margin: -10em auto 0 auto;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  background: linear-gradient(
+    180deg,
+    rgb(228, 69, 69) 30%,
+    rgb(214, 100, 100) 70%
+  );
+  position: absolute;
+  box-shadow: 0px 2px 5px 5px black;
+  width: 500px;
+  height: 600px;
+  transform-origin: -50% center;
+  transform: translate(-50%, -50%);
+}
+
+/* Candle */
+.velas {
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  margin-left: -2.4px;
+  margin-top: -8.33333333px;
+  width: 5px;
+  height: 35px;
+  transform: translateY(-420px);
+  backface-visibility: hidden;
+  animation: in 500ms 6s ease-out forwards;
+}
+.velas:after,
+.velas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.22222222px;
+}
+.velas:after {
+  top: 25%;
+  left: 0;
+}
+.velas:before {
+  top: 45%;
+  left: 0;
+}
+
+/* ============================================== Fire
+  */
+
+.fuego {
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -2.6px;
+  width: 6.66666667px;
+  height: 18px;
+}
+.fuego:nth-child(1) {
+  animation: fuego 2s 6.5s infinite;
+}
+.fuego:nth-child(2) {
+  animation: fuego 1.5s 6.5s infinite;
+}
+.fuego:nth-child(3) {
+  animation: fuego 1s 6.5s infinite;
+}
+.fuego:nth-child(4) {
+  animation: fuego 0.5s 6.5s infinite;
+}
+.fuego:nth-child(5) {
+  animation: fuego 0.2s 6.5s infinite;
+}
+
+/* ============================================== Animation Fire
+  */
+
+@keyframes fuego {
+  0%,
+  100% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    transform: translateY(-20px) scale(0);
+  }
+}
+
+@keyframes in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.h,
+.bd {
+  font-family: "Lobster", cursive;
+  position: relative;
+  transform: translate(-20%, -50%);
+  transform-origin: top center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.904);
+  font-size: 50px;
+  animation: wave 0.5s 6.5s infinite;
+}
+
+.h {
+  top: 15%;
+  left: 50%;
+}
+
+.bd {
+  top: 18%;
+  left: 45%;
+}
+
+@keyframes wave {
+  100% {
+    transform: rotate(2deg) translate(-20%, -50%);
+  }
+  50% {
+    transform: rotate(-2deg) translate(-20%, -50%);
+  }
+}
+
+/* INSIDE CARD */
+
+.inside {
+  position: absolute;
+  width: 1003px;
+  height: 600px;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  top: -50%;
+  transform-origin: center center;
+}
+
+.insidel {
+  position: relative;
+  float: left;
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  box-shadow: -2px 2.5px 5px 5px black;
+  z-index: 5;
+  transform-origin: 100% center;
+}
+
+.insider {
+  position: relative;
+  float: right;
+  width: 500px;
+  box-shadow: 0px 2px 5px 5px black;
+  height: 600px;
+  background-color: white;
+  z-index: 3;
+}
+
+.comment {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0;
+  color: white;
+  background-color: black;
+  height: 95px;
+  width: 310px;
+  font-size: 14px;
+}
+
+.traingle {
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid black;
+}
+
+.frame {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  box-shadow: -5px 5px 20px 0 rgba(202, 171, 171, 0.534);
+  background-color: whitesmoke;
+  height: 380px;
+  width: 300px;
+  transform-origin: top center;
+  transform: translate(-50%, -50%) rotate(-8deg);
+}
+
+.frame img {
+  box-shadow: -2px 2px 6px 0 rgba(202, 171, 171, 0.534);
+  position: absolute;
+  height: 300px;
+  width: 280px;
+  left: 50%;
+  transform: translate(-50%, 4%);
+}
+
+.happy {
+  position: absolute;
+  font-size: 30px;
+  top: 8%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-family: "Lobster", cursive;
+  font-style: italic;
+  text-decoration: underline;
+  animation: slide 0.4s linear infinite;
+}
+
+.para1 {
+  position: absolute;
+  font-size: 25px;
+  padding: 60px;
+  top: 2%;
+  font-family: "Dancing Script", cursive;
+  font-weight: 1px;
+}
+
+.para2 {
+  position: absolute;
+  font-size: 25px;
+  padding: 60px;
+  top: 36%;
+  font-family: "Dancing Script", cursive;
+}
+
+@keyframes slide {
+  50% {
+    transform: translateX(10px) translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-10px) translate(-50%, -50%);
+  }
+}
+
+.buttoninside {
+  border-radius: 2px;
+  position: absolute;
+  background-color: rgb(196, 41, 41);
+  height: 50px;
+  width: 35px;
+  top: 85%;
+  left: -4%;
+}
+
+.buttonf {
+  border-radius: 2px;
+  position: absolute;
+  background-color: rgb(196, 41, 41);
+  height: 50px;
+  width: 30px;
+  top: -40%;
+  right: -35%;
+}
+
+.buttonfront {
+  position: absolute;
+  background-color: black;
+  top: 85%;
+  right: 10%;
+  width: 180px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.buttonfront p {
+  color: white;
+  margin: 0;
+  padding-top: 4px;
+  padding-left: 35px;
+  font-family: "Dancing Script", cursive;
+}
+
+.buttonfront .train {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid black;
+  top: 50%;
+  right: -4%;
+  transform: translateY(-50%);
+}
+
+.buttonfront:hover,
+.buttoninside:hover {
+  cursor: -webkit-grab;
+}
+
+.buttonfront:hover .buttonf {
+  background-color: rgb(226, 29, 29);
+}
+
+.buttoninside:hover {
+  background-color: rgb(226, 29, 29);
+}
+
+.buttonf h2 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.781);
+  padding-left: 8px;
+  padding-top: 6px;
+}
+
+.buttoninside h2 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.781);
+  padding-left: 8px;
+  padding-top: 6px;
+}
+
+@keyframes flip {
+  100% {
+    transform: rotateY(-135deg) translate(-50%, -50%);
+  }
+}
+
+@keyframes flipin {
+  100% {
+    transform: rotateY(135deg) translate(-40%, 0%);
+  }
+}
