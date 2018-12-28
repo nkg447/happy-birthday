@@ -1,0 +1,500 @@
+/*bootstrap media queries*/
+
+/*large devices*/
+
+@media (min-width: 1200px) {
+  /*ok*/
+}
+
+/*medium devices*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .front {
+    width: 450px;
+    height: 540px;
+  }
+
+  .h,
+  .bd {
+    font-size: 40px;
+  }
+
+  .inside {
+    width: 903px;
+    height: 540px;
+  }
+
+  .insidel,
+  .insider {
+    width: 450px;
+    height: 540px;
+  }
+
+  .comment {
+    padding: 10px;
+    border-radius: 8px;
+    height: 90px;
+    width: 250px;
+    font-size: 12px;
+  }
+
+  .frame {
+    top: 58%;
+    height: 312px;
+    width: 260px;
+  }
+
+  .frame img {
+    height: 250px;
+    width: 240px;
+  }
+
+  .happy {
+    font-size: 26px;
+    top: 8%;
+    left: 46%;
+  }
+
+  .para1 {
+    font-size: 21px;
+    padding: 60px;
+    top: 2%;
+  }
+
+  .para2 {
+    font-size: 21px;
+    padding: 60px;
+    top: 36%;
+  }
+  .velas {
+    top: 320px;
+    transform: translateY(-430px);
+    width: 4px;
+    height: 28px;
+  }
+  #cake {
+    margin: -8em auto 0 auto;
+    width: 180px;
+    height: 450px;
+  }
+  .buttonfront {
+    right: 10%;
+    width: 168px;
+    height: 28px;
+  }
+
+  .buttonfront p {
+    font-size: 15px;
+  }
+
+  .buttonf {
+    height: 45px;
+    width: 28px;
+    top: -40%;
+    right: -35%;
+  }
+
+  .buttonf h2 {
+    font-size: 20px;
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+}
+
+/*small device*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .front {
+    width: 360px;
+    height: 520px;
+  }
+
+  .h,
+  .bd {
+    font-size: 38px;
+  }
+  .h {
+    top: 15%;
+    left: 50%;
+  }
+
+  .bd {
+    top: 16%;
+    left: 45%;
+  }
+
+  .inside {
+    width: 723px;
+    height: 520px;
+  }
+
+  .insidel,
+  .insider {
+    width: 360px;
+    height: 520px;
+  }
+
+  .comment {
+    padding: 10px;
+    border-radius: 8px;
+    height: 80px;
+    width: 220px;
+    font-size: 11px;
+  }
+
+  .frame {
+    top: 57%;
+    height: 290px;
+    width: 250px;
+  }
+
+  .frame img {
+    height: 230px;
+    width: 230px;
+  }
+
+  .happy {
+    font-size: 21px;
+    top: 8%;
+    left: 46%;
+  }
+
+  .para1 {
+    font-size: 18px;
+    padding: 60px;
+    top: 2%;
+  }
+
+  .para2 {
+    font-size: 18px;
+    padding: 60px;
+    top: 36%;
+  }
+  .velas {
+    top: 318px;
+    transform: translateY(-430px);
+    width: 3px;
+    height: 21px;
+  }
+  #cake {
+    margin: -6em auto 0 auto;
+    width: 160px;
+    height: 400px;
+  }
+  .buttonfront {
+    right: 10%;
+    width: 168px;
+    height: 28px;
+  }
+
+  .buttonfront p {
+    font-size: 15px;
+  }
+
+  .buttonf {
+    height: 45px;
+    width: 28px;
+    top: -40%;
+    right: -30%;
+  }
+
+  .buttonf h2 {
+    font-size: 18px;
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+  .buttoninside h2 {
+    font-size: 18px;
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+  .buttoninside {
+    height: 45px;
+    width: 28px;
+    top: 85%;
+    left: -4%;
+  }
+}
+
+/*extra small*/
+
+@media (max-width: 767px) {
+  .front {
+    width: 200px;
+    height: 350px;
+  }
+
+  .h,
+  .bd {
+    font-size: 28px;
+  }
+  .h {
+    top: 15%;
+    left: 45%;
+  }
+
+  .bd {
+    top: 16%;
+    left: 38%;
+  }
+
+  .inside {
+    width: 403px;
+    height: 350px;
+  }
+
+  .insidel,
+  .insider {
+    width: 200px;
+    height: 350px;
+  }
+
+  .comment {
+    padding: 8px;
+    border-radius: 8px;
+    height: 40px;
+    width: 120px;
+    font-size: 6px;
+  }
+
+  .frame {
+    top: 53%;
+    height: 180px;
+    width: 150px;
+  }
+
+  .frame img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .happy {
+    font-size: 12px;
+    top: 8%;
+    left: 45%;
+  }
+
+  .para1 {
+    font-size: 10px;
+    padding: 30px;
+    top: 7%;
+  }
+
+  .para2 {
+    font-size: 10px;
+    padding: 30px;
+    top: 35%;
+  }
+  .velas {
+    top: 220px;
+    width: 2px;
+    left: 52%;
+    transform: translateY(-450px);
+    height: 14px;
+  }
+  #cake {
+    margin: -3em auto 0 auto;
+    width: 100px;
+    height: 250px;
+  }
+  .buttonfront {
+    right: 10%;
+    width: 100px;
+    height: 22px;
+  }
+
+  .buttonfront p {
+    font-size: 10px;
+    padding-top: 5px;
+    padding-left: 18px;
+  }
+
+  .buttonf {
+    height: 40px;
+    width: 22px;
+    top: -40%;
+    right: -30%;
+  }
+
+  .buttonf h2 {
+    font-size: 15px;
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+  .buttoninside h2 {
+    font-size: 15px;
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+  .buttoninside {
+    height: 40px;
+    width: 22px;
+    top: 85%;
+    left: -6%;
+  }
+}
+
+@media (max-width: 480px) {
+  .front {
+    width: 120px;
+    height: 220px;
+  }
+
+  .h,
+  .bd {
+    font-size: 16px;
+  }
+  .h {
+    top: 15%;
+    left: 45%;
+  }
+
+  .bd {
+    top: 16%;
+    left: 38%;
+  }
+
+  .inside {
+    width: 243px;
+    height: 220px;
+  }
+
+  .insidel,
+  .insider {
+    width: 120px;
+    height: 220px;
+  }
+
+  .comment {
+    padding: 6px;
+    border-radius: 5px;
+    height: 25px;
+    width: 80px;
+    font-size: 4px;
+  }
+  .traingle {
+    top: 105%;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+  }
+
+  .frame {
+    top: 53%;
+    height: 110px;
+    width: 80px;
+  }
+
+  .frame img {
+    height: 80px;
+    width: 70px;
+  }
+
+  .happy {
+    font-size: 7px;
+    top: 15%;
+    left: 45%;
+  }
+
+  .para1 {
+    font-size: 5px;
+    padding: 20px;
+    top: 15%;
+  }
+
+  .para2 {
+    font-size: 5px;
+    padding: 20px;
+    top: 40%;
+  }
+  .velas {
+    top: 136px;
+    width: 1px;
+    left: 52%;
+    transform: translateY(-450px);
+    height: 7px;
+  }
+  #cake {
+    margin: -3em auto 0 auto;
+    width: 70px;
+    height: 175px;
+  }
+  .buttonfront {
+    right: 10%;
+    width: 50px;
+    height: 12px;
+  }
+
+  .buttonfront p {
+    font-size: 6px;
+    padding-top: 2px;
+    padding-left: 5px;
+  }
+
+  .buttonf {
+    height: 25px;
+    width: 15px;
+    top: -40%;
+    right: -40%;
+  }
+
+  .buttonfront .train {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid black;
+    top: 50%;
+    right: -4%;
+  }
+
+  .buttonf h2 {
+    font-size: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+  .buttoninside h2 {
+    font-size: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+  .buttoninside {
+    height: 25px;
+    width: 15px;
+    top: 85%;
+    left: -7%;
+  }
+}
+
+@media (max-width: 320px) {
+  .service-item-icon i {
+    width: 58px;
+    height: 58px;
+    padding: 7px;
+  }
+
+  .service-item-title h3 {
+    font-size: 17px;
+  }
+
+  #about-content-box {
+    margin-top: 40px;
+  }
+
+  .testimonial blockquote {
+    padding: 6px 30px;
+  }
+
+  /*left quotation mark*/
+  .testimonial blockquote:before {
+    left: 7px;
+  }
+
+  /*right quotation mark*/
+  .testimonial blockquote:after {
+    right: 7px;
+  }
+
+  .testimonial img {
+    max-width: 80px;
+  }
+}

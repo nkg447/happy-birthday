@@ -11,6 +11,8 @@ html {
   display: block;
   position: relative;
   margin: -10em auto 0 auto;
+  width: 200px;
+  height: 500px;
 }
 
 .center {
