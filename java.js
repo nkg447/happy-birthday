@@ -20,3 +20,18 @@ document.getElementsByClassName("buttoninside")[0].onclick = e => {
     document.getElementsByClassName("front")[0].hidden = false;
   }, 700);
 };
+
+function getUrlVars() {
+  var vars = {};
+  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(
+    m,
+    key,
+    value
+  ) {
+    vars[key] = value;
+  });
+  return vars;
+}
+
+document.getElementById("birthday_of").innerHTML = getUrlVars()["of"];
+document.getElementById("bd_image").src = getUrlVars()["img"];
